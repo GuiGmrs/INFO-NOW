@@ -10,3 +10,24 @@ toggle.addEventListener("click", () => {
     toggle.textContent = "🌙";
   }
 });
+
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+const closeBtn = document.getElementById("closeSidebar");
+
+// ABRIR O SIDEBAR BOCOIÓ
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.add("active");
+});
+
+// Fechar sidebar BocoiÓ
+closeBtn.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+});
+
+// Fechar clicando fora BocoiÓ
+document.addEventListener("click", (e) => {
+  if (sidebar.classList.contains("active") && !sidebar.contains(e.target) && e.target !== menuBtn) {
+    sidebar.classList.remove("active");
+  }
+});
