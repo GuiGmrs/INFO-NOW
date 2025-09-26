@@ -22,11 +22,11 @@ header a {
   background: none;
   border: none;
   cursor: pointer;
-  color: #000000;
+  color: #2f7bd3;
   text-decoration: none;
 }
 header a:hover {
-  color: #2f7bd3;
+  color: white;
 }
 
 #menuBtn, #darkModeToggle {
@@ -44,7 +44,7 @@ header a:hover {
 }
 
 header img {
-  width: 180px;
+  width: 50%;
   height: auto;
 }
 

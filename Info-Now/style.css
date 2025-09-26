@@ -107,6 +107,7 @@ main h2 {
   display: flex;
   flex-direction: column;
   max-height: 400px;
+  width: 350px;
 }
 
 .news-card:hover {
@@ -391,6 +392,7 @@ body.dark-mode .search-btn {
 }
 
 .sidebar-menu {
+  height: 80vh;
   list-style: none;
   padding: 0;
   margin-top: 10px;
